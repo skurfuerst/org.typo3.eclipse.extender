@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <!-- TYPO3 v4 t3lib_div::makeInstance(...) support for type hints -->
+   <extension point="org.eclipse.php.core.goalEvaluatorFactories">
+   <factory
+      class="org.typo3.php.Typo3GoalEvaluatorFactory"
+      priority="100">
+  </factory>
+   </extension>
+
+   <!-- FLOW3 ObjectManager->create(...) support for type hints -->
+   <extension point="org.eclipse.php.core.goalEvaluatorFactories">
+   <factory
+      class="org.typo3.php.Flow3GoalEvaluatorFactory"
+      priority="120">
+  </factory>
+   </extension>
+  
+  
+  <extension point="org.eclipse.php.core.completionStrategyFactories">
+     <factory class="org.typo3.php.GenericCompletionStrategyFactory"/>
+  </extension>
+  
+  <extension point="org.eclipse.php.core.completionContextResolvers">
+     <resolver class="org.typo3.php.GenericCompletionContextResolver"/>
+  </extension>
+</plugin>

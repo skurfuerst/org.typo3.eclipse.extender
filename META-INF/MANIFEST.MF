@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: org.typo3.eclipse.extender;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.php.core;bundle-version="2.2.0",
+ org.eclipse.dltk.core,
+ org.eclipse.php;bundle-version="2.2.0"
+Import-Package: org.eclipse.dltk.ti,
+ org.eclipse.jface.text
+Export-Package: org.typo3.php
